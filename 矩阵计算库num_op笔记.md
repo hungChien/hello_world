@@ -3,17 +3,20 @@
 2. 对于element为list的list对象,普通的切片索引复制并不是真正的拷贝,此时需要用到上面的方法
 ## python运算符重载
 * python提供了很多运算符的重载,如下:
-__add__,__radd__ | +
-__iadd__ | +=
-__sub__,__rsub__| -
-__isub__ | -=
-__len__ | len
-__getitem__ | []
-__setitem__ | a[i]=
-__mul__, __rmul__ | *
-__div__, __truediv__, __rdiv__ | /
-__neg__ | -
-__str__ | str()和print function
+| 名称          | 符号  |
+| ------------ | ---- |
+| add,radd     | +   |
+| iadd         | +=           |
+| sub,rsub     | -            |
+| isub         | -=           |
+| len          | len          |
+| getitem      | []           |
+| setitem      | a[i]=        |
+| mul, rmul    | *            |
+| div, truediv | /            |
+| neg          | -            |
+| str          | str()和print |
+
 ## slice对象
 * 两个属性:slice.start和slice.stop
 * slice对象指的是如(m:n)这样的切片,在重载__setitem__时常需要考虑slice
